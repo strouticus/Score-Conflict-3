@@ -2,4 +2,14 @@ Test file made on github
 
 That now has more things added by Andrew, hopefully.
 
+<<<<<<< HEAD
 -----Mark was here------
+=======
+Also, my edit is far better than whatever edit Mark Foster will be doing.
+
+Hahaha.
+
+
+
+tnnuel skanes rlue
+>>>>>>> 6f5a5a7ec2f854f5f7d01f80c53da05b06b08722
