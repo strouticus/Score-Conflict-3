@@ -1,5 +1,21 @@
 //input.js
 
+function DoGamepadInput () {
+	var gamepad0 = navigator.webkitGetGamepads()[0];
+
+	var up = gamepad0.buttons[12];
+	var down = gamepad0.buttons[13];
+	var left = gamepad0.buttons[14];
+	var right = gamepad0.buttons[15];
+	var attack = gamepad0.buttons[1] || gamepad0.buttons[3];
+	var special = gamepad0.buttons[0] || gamepad0.buttons[2];
+	var inputArray = [up, left, down, right, attack, special];
+	return inputArray;
+}
+
+
+
+
 cursorVisible = true;
 keyPressedOrder = [];
 
@@ -36,6 +52,8 @@ function DoMouseDown (e) {
 	if (!cursorVisible)
 	{
 		//Do mouse input
+		groundShape.AddPart(mouseX, mouseY);
+		groundShape.AddPart(960 - mouseX, mouseY);
 	}
 	
 }
@@ -59,6 +77,7 @@ function TrackKeyOn (key) {
 	}
 	//put key at front of list: most recently pressed
 	keyPressedOrder.unshift(key);
+	//console.log(keyPressedOrder);
 }
 
 function TrackKeyOff (key) {
@@ -67,6 +86,7 @@ function TrackKeyOff (key) {
 		if (keyPressedOrder[i] == key)
 		{
 			keyPressedOrder.splice(i, 1);
+			//console.log(keyPressedOrder);
 			return;
 		}
 	}

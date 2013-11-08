@@ -1,0 +1,42 @@
+Red: Display
+Green: Hitbox
+Blue: Hurtbox
+
+Red
+0- nothing
+64 - hands/feet
+182 - dark
+200 - shield
+255 - light
+
+Green:Hitbox
+0-none
+128-hitbox
+255-very hitbox
+
+Blue
+255-not hurtbox
+0-is hurtbox
+
+
+
+Hands/Feet + Light Hitbox
+R64 G128 B0
+
+Hands/Feet + Heavy Hitbox
+R64 G255 B0
+
+Dark Color + Light Hitbox
+R182 G128 B0
+
+Dark Color + Heavy Hitbox
+R182 G255 B0
+
+Light Color + Light Hitbox
+R255 G128 B0
+
+Light Color + Heavy Hitbox
+R255 G255 B0
+
+Hands/Feet + Not Hurtbox
+R64
