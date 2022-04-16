@@ -1,7 +1,6 @@
-Score-Conflict-2
+Score-Conflict-3
 ================
 
-server for score conflict 2
+score conflict 3 game
 
-I'M A COMPUTER
-STOP ALL THE DOWNLOADING
+we're really cool and funny
