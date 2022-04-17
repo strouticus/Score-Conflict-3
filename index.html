@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<title>Score Conflict</title>
+<html>
+
+<div id="game_canvas" >
+	<body onload='Init();' bgcolor='#C0C0C0'>
+		<canvas id="Canvas2D" style="position:absolute; left:0px; top:0px" width="1920" height="1080" onmousemove="MousePos(event)" onmouseover="hoverOn(event)" onmouseout="hoverOff(event)">
+			no canvas
+		</canvas>
+		<br/>
+	</body>
+</div>
+
+<style type="text/css">
+body {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+@font-face
+{
+font-family: lowrider;
+src: url(lowrb.ttf);
+}
+@font-face
+{
+font-family: ultraviolent;
+src: url(ultraviolent.ttf);
+}
+@font-face
+{
+font-family: govtagent;
+src: url(govtagent.ttf);
+}
+</style>
+
+<script src="Code_Library/soundjs-0.5.2.min.js"></script>
+
+<script>
+var ARCADE_MODE = false;
+
+//Catch uncaught exceptions
+// process.on('uncaughtException', function (err) {
+// 	console.log('Caught exception: ' + err);
+// });
+</script>
+
+<script src="input.js"></script>
+<script src="audio.js"></script>
+<script src="imageloader.js"></script>
+<script src="sprite.js"></script>
+<script src="button.js"></script>
+<script src="render.js"></script>
+<script src="ballEntity.js"></script>
+<script src="groundShape.js"></script>
+<script src="goalEntity.js"></script>
+<script src="playerEntity.js"></script>
+<script src="collisions.js"></script>
+<script src="levels.js"></script>
+<script src="script.js"></script>
+
+</html>

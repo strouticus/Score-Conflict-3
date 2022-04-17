@@ -1,6 +1,0 @@
-jumptakeoff 1
-jumplanding 2
-punching 3
-kickrelease 3
-idle 5
-tripped 3
